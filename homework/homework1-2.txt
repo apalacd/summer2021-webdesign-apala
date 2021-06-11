@@ -1,0 +1,16 @@
+Apalas-MacBook-Air:MEDA apala$ cd summer2021-webdesign-apala
+Apalas-MacBook-Air:summer2021-webdesign-apala apala$ ls
+assignments	handouts	projects
+Apalas-MacBook-Air:summer2021-webdesign-apala apala$ mkdir homework
+Apalas-MacBook-Air:summer2021-webdesign-apala apala$ cd homework
+Apalas-MacBook-Air:homework apala$ pwd
+/Users/apala/MEDA/summer2021-webdesign-apala/homework
+Apalas-MacBook-Air:homework apala$ touch homework1-2.txt
+Apalas-MacBook-Air:homework apala$ ls
+homework1-2.txt
+Apalas-MacBook-Air:homework apala$ ls -la
+total 0
+drwxr-xr-x  3 apala  staff   96 Jun 10 11:42 .
+drwxr-xr-x  7 apala  staff  224 Jun 10 11:41 ..
+-rw-r--r--  1 apala  staff    0 Jun 10 11:42 homework1-2.txt
+Apalas-MacBook-Air:homework apala$
