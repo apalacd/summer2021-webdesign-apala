@@ -1,0 +1,54 @@
+<!-- the quote is for quotes, usually paraphrasing other's words -->
+    
+<p>My favorite quote is <q>Never bite the hand that feeds you.</q></p>
+
+<!--The following will have a lower specificity value as it is not using <q></q> tags for the text within double quotes-->
+<!--double and single quotes can be used but loses semantic value if the text is an actual quote-->
+<p>My favorite quote is "Never bite the hand that feeds you."</p>
+
+
+<!-- Creates a "seperation" between content by drawing a line -->
+<hr />
+
+<!-- A container to hold a quote that is not part of the main content flow. br tag is to force a line to break between texts. -->
+<blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam placeat, iure consectetur maxime tenetur pariatur vitae fugit, inventore omnis, adipisci alias quidem voluptatum aliquid sequi nulla suscipit eaque error?<br />Aut earum quasi voluptatum eveniet accusantium fugiat amet molestiae ut voluptate distinctio! Unde, soluta!</blockquote>
+
+<!-- <table> is a container representing a data table -->
+<table>
+
+    <!-- the thead element is to add semantic value to specific rows signifying they are NOT data-->
+    <thead>
+        <!-- tr is an individual table row. -->
+        <tr>
+
+        <!-- td is the data for a single column, should have a parent of tr.  you can "stretch" a table data element to take more than one column using the colspan attribute-->
+        <!-- how to stretch a piece of data to more columns -->
+            <td colspan="2">Valid Human Foods</td>
+        <tr>
+        <tr>
+            <!-- th is table header, a lot like table data but is NOT data -->
+            <th>Food Name</th>
+            <th>Is Valid?</th>
+        </tr>
+        <tr>
+            <!-- th is table header, a lot like table data but is NOT data-->
+            <th>Food Name</th>
+            <th>Is Valid?</th>
+        </tr>
+    </thead>
+    <!-- the tbody element is to add semantic value to specific rows singifying thery are NOT data-->
+    <tbody>
+        <tr>
+            <td>Pizza</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Sushi</td>
+            <td>True</td>
+        </tr>
+         <tr>
+            <td>Plastic</td>
+            <td>False</td>
+        </tr>
+    </tbody>
+</table>
