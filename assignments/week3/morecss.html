@@ -1,0 +1,82 @@
+<!DOCTYPE html>   <!-- DOCTYPE means the version-->
+
+<html lang="en">   <!--Lang is required as search engines look for it-->
+    <head>
+        <meta charset="utf-8" />     <!-- meta data character set -->
+        <title>More CSS</title>
+
+        <!-- Internal Stylesheets -->
+        <style>
+            img{
+                /* choose one width or height to prevent distortion */
+                height: 200px;   
+                border-width: 5px;
+                border-style: solid;
+                border-color: burlywood;
+                border-radius: 20px;
+            }
+
+        /* select a class needs to start with a period */
+            .portrait {        /*  . denotes a class not element */
+                border-color: lightcoral;
+            }
+        /*sleect an id needs to start with the hash symbol */
+            #sun {
+                border-style: dashed;
+                box-shadow: 10px 10px gray;
+            }
+
+            div h1 {
+                color: gray;
+            }
+
+            div .portrait {
+                border-color: cornflowerblue;
+            }
+
+            div {
+                background-color: darkblue;
+                border:
+            }
+            #happy {
+                color: maroon;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>My favorite sad photo</h1>
+
+        <!--<img class="portrait" src="tinyplant.jpg" alt="A small plant in the middle of a grassy field on an overcast day."
+        width="640" height="960" />  -->
+
+        <img class="portrait" src="tinyplant.jpg" alt="A small plant in the middle of a grassy field on an overcast day." />
+
+        <!--target =_blank is an anchor element and opens the linked page in a new tab-->
+        <img src="peoplebeach.jpg" alt="One man holding the other man on the back laughing and walking along a sandy beach with waves to their right" />
+
+        <a href="https://google.com/" target="_blank"><img src="newspaperfire.jpg" alt="Lady in front of abandoned building, reading a newspaper that is on fire." /></a>
+    
+        <img id="sun" src="redsun.jpg" alt="Dark smoggy sky with a very red Sun" />
+
+        <div>
+            <h1>My favorite <span id="happy">happy</span> photos</h1>
+
+        <img class="portrait" src="tinyplant.jpg" alt="A small plant in the middle of a grassy field on an overcast day."/>
+        <!--target =_blank is an anchor element and opens the linked page in a new tab-->
+        <img src="peoplebeach.jpg" alt="One man holding the other man on the back laughing and walking along a sandy beach with waves to their right" />
+        <a href="https://google.com/" target="_blank"><img src="newspaperfire.jpg" alt="Lady in front of abandoned building, reading a newspaper that is on fire." /></a>
+        <img id="sun" src="redsun.jpg" alt="Dark smoggy sky with a very red Sun" />
+
+        </div>
+    </body>
+
+
+    </body>
+</html>
+
+<!--Indentation
+For moving the text right and left you can use TAB key:
+
+TAB move the selected text right
+SHIFT + TAB move the selected text left -->
