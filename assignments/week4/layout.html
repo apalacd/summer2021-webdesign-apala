@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta charset="utf-8">
+    <title>My First CSS Layout Web Page</title>
+
+    <head>
+
+
+    <style>
+        #container {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #header {
+            background-color: thistle;
+            /*width: 700px;      --- since #container has the width and all children(ids) will inherit properties of the parent(#container)*/   
+        }
+
+        #main {
+            background-color: lightgrey;
+            /*width: 700px; --- since #container has the width and all children(ids) will inherit properties of the parent(#container)
+            margin-left: auto;  -- this setting applied to the #container
+            margin-right: auto;*/
+
+        }
+
+        #footer {
+            background-color: blanchedalmond;
+            /*width: 700px; --- since #container has the width and all children(ids) will inherit properties of the parent(#container)*/
+        }
+    </style>
+
+    </head>
+
+    <body>
+
+        <div id="container">    <!--parent of body and has 3 children ids on this web page.  It is good to create it so the styles can be applied to the set of elements within container -->
+
+        <div id="header"> 
+            <h1>Welcome to My Website</h1>
+        </div>
+
+        <div id="main">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic qui maxime aut libero cum reprehenderit consectetur molestias vel, unde quis eveniet quod vitae labore aspernatur, asperiores enim eaque eum.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nihil libero cum illo. Maxime voluptatem ipsum ipsam, quisquam labore porro aut est inventore dicta modi expedita iusto! Voluptate, atque. Voluptates!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui error sapiente optio neque excepturi eligendi temporibus voluptatum enim aliquam rem beatae velit nesciunt nostrum, aspernatur reprehenderit? Pariatur, voluptate ipsam?</p>
+        </div>
+
+        <div id="footer">     
+            <p>Copyright 2021</p>
+        </div>
+        </div>
+    </body>
+</html>

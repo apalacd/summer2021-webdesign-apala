@@ -11,10 +11,13 @@
 
             body {
                 border: 5px solid black;
+                height: 10000px;
             }
-            #red, #blue, #green {
+
+            #red, #blue, #green, #yellow {    /*Same rule-set can be applied to multiple classes, ids and elements  */
                 width: 200px;
                 height: 200px;
+                
 
             }
 
@@ -38,6 +41,22 @@
 
             #green {
                 background-color: green;
+                position: fixed;   /* position will be fixed irrespective of scrolling up and down  - usually used in pop-ups with position fixed */
+                /*For details check ou - https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+                top: 0px;
+                bottom: 0px;
+            } 
+
+            #yellow {
+                position: sticky;
+                top: 0px;
+                background-color: yellow;
+                /* margin-left: 641; */
+                margin-left: auto;  /* To center the element use auto. Auto works for only right and left to align the element to the center of the container */
+
+                /* Eduardo's comment : Auto will automatically calculate how much space each side should have equally. Only works on left/right, not top/bottom. */
+
+                margin-right: auto;
             }
 
 
@@ -50,6 +69,7 @@
         <div id="red"></div>
         <div id="blue"></div>
         <div id="green"></div>
+        <div id="yellow"></div>
 
     </body>
 </html>
