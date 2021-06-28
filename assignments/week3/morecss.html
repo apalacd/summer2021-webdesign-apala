@@ -7,7 +7,33 @@
 
         <!-- Internal Stylesheets -->
         <style>
-            img{
+        
+        /*  CSS selectors for html elements - 
+
+            #   is for id     - specificity value :100 points
+            .   is for class  - specificity value : 10 points
+            element name by itself - specificity value : 1 point     
+            (like p, body, div, h1, h2 etc)
+
+            Ex - div id    - are 2 elements - spcificity value is 2.
+
+            div  - is used for a group of elements
+            span - is an inline element. It is for text only. 
+        
+        
+        */
+            body {
+                background-color: blanchedalmond;
+            }
+
+            /* Specificity Values -
+               One Element = 1 point
+               One Class = 10 points
+               One ID = 100 points
+            */
+
+
+            img {
                 /* choose one width or height to prevent distortion */
                 height: 200px;   
                 border-width: 5px;
@@ -16,30 +42,39 @@
                 border-radius: 20px;
             }
 
-        /* select a class needs to start with a period */
+        /* select a class needs to start with a period. It can be applied to multiple elements. */
             .portrait {        /*  . denotes a class not element */
                 border-color: lightcoral;
             }
-        /*sleect an id needs to start with the hash symbol */
-            #sun {
-                border-style: dashed;
+
+        /*select an id needs to start with the hash symbol. Can ONLY be applied to one element (per unique ID) */
+            #sun { 
+            /*    border-style: dashed;   */
                 box-shadow: 10px 10px gray;
-            }
-
-            div h1 {
-                color: gray;
-            }
-
-            div .portrait {
-                border-color: cornflowerblue;
             }
 
             div {
                 background-color: darkblue;
-                border:
+                width: 600px;
+                border: green solid 5px;
+                border-radius: 10px;
+            /*    border-color: lightskyblue;  */
+                color: red;
+            }
+
+            div h1 {
+                color: grey;
+            }
+
+            body div .portrait {     /* rule set applicable to all 3 elements - body, div and portrait  */
+                border-color: cornflowerblue;
+            }
+
+        
             }
             #happy {
                 color: maroon;
+                text-decoration: line-through;  /* */
             }
 
         </style>
@@ -62,21 +97,28 @@
         <div>
             <h1>My favorite <span id="happy">happy</span> photos</h1>
 
-        <img class="portrait" src="tinyplant.jpg" alt="A small plant in the middle of a grassy field on an overcast day."/>
-        <!--target =_blank is an anchor element and opens the linked page in a new tab-->
-        <img src="peoplebeach.jpg" alt="One man holding the other man on the back laughing and walking along a sandy beach with waves to their right" />
-        <a href="https://google.com/" target="_blank"><img src="newspaperfire.jpg" alt="Lady in front of abandoned building, reading a newspaper that is on fire." /></a>
-        <img id="sun" src="redsun.jpg" alt="Dark smoggy sky with a very red Sun" />
+            <img class="portrait" src="tinyplant.jpg" alt="A small plant in the middle of a grassy field on an overcast day."/>
+            <!--target =_blank is an anchor element and opens the linked page in a new tab-->
+            <img src="peoplebeach.jpg" alt="One man holding the other man on the back laughing and walking along a sandy beach with waves to their right" />
+            <a href="https://google.com/" target="_blank"><img src="newspaperfire.jpg" alt="Lady in front of abandoned building, reading a newspaper that is on fire." /></a>
+            <img id="sun" src="redsun.jpg" alt="Dark smoggy sky with a very red Sun" />
 
         </div>
+
+         
     </body>
 
-
-    </body>
 </html>
 
-<!--Indentation
+<!-- Quick hot keys
+Indentation:
 For moving the text right and left you can use TAB key:
 
 TAB move the selected text right
-SHIFT + TAB move the selected text left -->
+SHIFT + TAB move the selected text left 
+
+Comment and uncomment toggle for a block of code lines:
+
+Control /
+
+-->

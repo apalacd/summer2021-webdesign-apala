@@ -6,14 +6,96 @@
         <title>Looking at HTML5 Elements</title>
 
         <style>
+/* when you want to set the value to nothing, use 0 with NO units. */
+            p, h1 {
+                margin-block-start: 0;
+               /* margin-right: 0;  */
+                margin-block-end: 0;
+            }
 
+            body {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            /*body h1{} */
+
+            /*#redbox, body #purplebox {    --- has a higher specificity value
+            hence the second rule set of #purplebox will not take effect  */
+
+            /* #redbox, body #purplebox {  */
+            #redbox, #purplebox {
+                display: inline-block;    
+                width: 180px;
+                height: 100px;
+                background-color: red;
+                padding-left: 20px;
+                padding-top: 20px; 
+         /*       margin-bottom: 20px;    Removing this margin makes the p text to align with the other boxes at the bottom since it applies to body as well and p is within the body element */ 
+                margin-left: 20px;
+                border: 5px grey solid;
+                border-radius: 20 px;
+
+            }
+
+            /* If the specificity value of the element is same as previous where another rule-set is applied to it, then the latest one will take effect - order of excution matters */
+            #purpebox {
+                background-color: purple;
+                width: 300px;
+            }
+
+            #greenbox, #yellowbox {
+            /*    width: 300px;  */
+                height: 50px;
+                background-color: green;
+                margin-top: 10px;
+
+            }
+
+            #yellowbox {
+                background-color: yellow;
+            }
+
+            /*Direct descendant selector, the second element should be a direct child
+             of the first element */
+            body > p{
+                display: inline;
+                vertical-align: bottom;
+            }
 
         </style>
+
+
     </head>
 
     <body>
 
-        <div id="box"></div>
+    <!--   <div id="box">
+            <p>Hello!</p>
+        </div>
+    -->
+
+        <div id="redbox">
+            <p>O</p>
+
+            <div id="greenrbox">
+                <p>VVVVVVVVVVVVV</p>
+            </div>
+
+        </div>
+
+        <div id="purplebox">
+            <p>O</p>
+
+            <div id="yellowrbox">
+                <p>^^^^^^^^^^^^</p>
+            </div>
+
+        </div>
+
+        <p>This should be next to the purple box</p>
+
+        
 <!-- Header is the Top area of the webpage. The header section would include logo, website name, any login/search icons, navigation. This should be the same for every webpage of the website. -->
         <header>
             <!--The nav element is for your navigation links-->

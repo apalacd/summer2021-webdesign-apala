@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8"  />
+        <title>CSS Positions</title>
+
+        <style>
+
+            body {
+                border: 5px solid black;
+            }
+            #red, #blue, #green {
+                width: 200px;
+                height: 200px;
+
+            }
+
+            #red {
+                background-color: red;
+                position: absolute;        /* use position attribute only if you want to move or shift an attribute to another place. position is based on from where parent starts */
+                top: 50px;
+                left: 100px;
+            
+                margin-top: 150px;
+                /* margin-left: 100px;  */
+            }
+
+            #blue { 
+                background-color: blue;
+                position: relative; /* position is based on from where it used to be located from the beginning */
+                top: 100px;
+                left: 150px;
+                margin-top: 100px;
+            }
+
+            #green {
+                background-color: green;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+
+    </body>
+</html>
