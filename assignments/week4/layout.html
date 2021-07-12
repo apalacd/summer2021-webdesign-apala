@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <meta charset="utf-8">
-    <title>My First CSS Layout Web Page</title>
 
     <head>
+        <meta charset="utf-8">
+        <title>My First CSS Layout Web Page</title>
 
+        <style>
+            #container {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-    <style>
-        #container {
-            width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+            #header {
+                background-color: thistle;
+                /*width: 700px;      --- since #container has the width and all children(ids) will inherit properties of the parent(#container)*/ 
+                color: purple;
+                text-align: center;  
+                font-family: "Arial";
+                font-size: 24px;
+                /* Default points for */
+                text-transform: uppercase;
+                border-radius: 14px;
 
-        #header {
-            background-color: thistle;
-            /*width: 700px;      --- since #container has the width and all children(ids) will inherit properties of the parent(#container)*/ 
-            color: midnightblue;
-            text-align: center;  
-            font-family: "Arial";
-            font-size: 24px;
-            /* Default points for */
-            text-transform: uppercase;
-            border-radius: 14px;
+            }
 
-        }
+                #header h1 {
+                    margin-block-end: 0;  /* gets rid of the margin that header comes with */
 
-        #header h1 {
-            margin-block-end: 0;  /* gets rid of the margin that header comes with */
+                }
 
-        }
+                /* Text elements do not have margins. Paragraph elements do */
 
-        /* Text elements do not have margins. Paragraph elements do */
+                #main {
+                    margin-top: 28px;
+                    padding: 28px;
+                    background-color: midnightblue;
+                    /*width: 700px; --- since #container has the width and all children(ids) will inherit properties of the parent(#container)
+                    margin-left: auto;  -- this setting applied to the #container
+                    margin-right: auto;*/
+                    color: whitesmoke;
+                    font-family: Arial;
+                    font-size: 28px;
+                    /*font-weight: bold;   -- for boldness of the text font */
+                    border-radius: 14px;
+                    line-height: 42px;  /* Should be 1.5 times of the font-size */
+                    text-align: justify;
 
-        #main {
-            margin-top: 28px;
-            padding: 28px;
-            background-color: midnightblue;
-            /*width: 700px; --- since #container has the width and all children(ids) will inherit properties of the parent(#container)
-            margin-left: auto;  -- this setting applied to the #container
-            margin-right: auto;*/
-            color: whitesmoke;
-            font-family: Arial;
-            font-size: 28px;
-            /*font-weight: bold;   -- for boldness of the text font */
-            border-radius: 14px;
-            line-height: 42px;  /* Should be 1.5 times of the font-size */
-            text-align: justify;
-
-        }
+                }
 
         #main-p {
             margin-block-start: 0;
+            
         }
 
         #main #article {     /* article is new div id and part of main div */
@@ -60,8 +60,7 @@
             /*width: 644px;*/
             width: 616px;
             /*height: 200px; */
-            height: 900px; 
-
+            /*height: 900px; */
             /*background-color: navajowhite;*/
             padding-right: 28px;
 
@@ -75,10 +74,12 @@
             /*height: 100%;    /* Can't use %ge for an inline elements in a block */
             background-color: orangered;
             vertical-align: top;
+            border-radius: 14px;
         }
 
         #footer {
-            background-color: blanchedalmond;
+            margin-top: 28px;
+            background-color: olive;
             /*width: 700px; --- since #container has the width and all children(ids) will inherit properties of the parent(#container)*/
             height: 28px;
             border-radius: 14px; 
@@ -86,8 +87,8 @@
             text-align: center;
             text-transform: uppercase;
             color: whitesmoke;
-            font-family: Arial;
-            
+            font-family: Arial; 
+                     
 
         }
 
@@ -97,33 +98,36 @@
 
     <body>
 
-        <div id="container">    <!--parent of body and has 3 children ids on this web page.  It is good to create it so the styles can be applied to the set of elements within container -->
+        <div id="container">    <!-- Container div id opening tag -->
+            <!--parent of body and has 3 children ids on this web page.  It is good to create it so the styles can be applied to the set of elements within container -->
 
-        <div id="header"> 
-            <h1>Welcome to My Website</h1>
-        </div>
-
-        <div id="main">
-
-            <div id= "article">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic qui maxime aut libero cum reprehenderit consectetur molestias vel, unde quis eveniet quod vitae labore aspernatur, asperiores enim eaque eum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nihil libero cum illo. Maxime voluptatem ipsum ipsam, quisquam labore porro aut est inventore dicta modi expedita iusto! Voluptate, atque. Voluptates!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui error sapiente optio neque excepturi eligendi temporibus voluptatum enim aliquam rem beatae velit nesciunt nostrum, aspernatur reprehenderit? Pariatur, voluptate ipsam?</p>
-
-            <!--There should be no line between where the first div ends and the second div begins for the blocks to show next to each other without any gap in between-->
-            </div><div id ="section">  
-                    
-
+            <div id="header"> 
+                <h1>Welcome to My Website</h1>
             </div>
 
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic qui maxime aut libero cum reprehenderit consectetur molestias vel, unde quis eveniet quod vitae labore aspernatur, asperiores enim eaque eum.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nihil libero cum illo. Maxime voluptatem ipsum ipsam, quisquam labore porro aut est inventore dicta modi expedita iusto! Voluptate, atque. Voluptates!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui error sapiente optio neque excepturi eligendi temporibus voluptatum enim aliquam rem beatae velit nesciunt nostrum, aspernatur reprehenderit? Pariatur, voluptate ipsam?</p> -->
-        </div>
+            <div id="main">
 
-        <div id="footer">     
-            <p>Copyright &copy; 2021</p>
-        </div>
-        </div>
+                <div id= "article">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic qui maxime aut libero cum reprehenderit consectetur molestias vel, unde quis eveniet quod vitae labore aspernatur, asperiores enim eaque eum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nihil libero cum illo. Maxime voluptatem ipsum ipsam, quisquam labore porro aut est inventore dicta modi expedita iusto! Voluptate, atque. Voluptates!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui error sapiente optio neque excepturi eligendi temporibus voluptatum enim aliquam rem beatae velit nesciunt nostrum, aspernatur reprehenderit? Pariatur, voluptate ipsam?</p>
+
+                <!--There should be no line between where the first div ends and the second div begins for the blocks to show next to each other without any gap in between-->
+                </div><div id ="section">  
+                        
+
+                </div>
+
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic qui maxime aut libero cum reprehenderit consectetur molestias vel, unde quis eveniet quod vitae labore aspernatur, asperiores enim eaque eum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nihil libero cum illo. Maxime voluptatem ipsum ipsam, quisquam labore porro aut est inventore dicta modi expedita iusto! Voluptate, atque. Voluptates!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui error sapiente optio neque excepturi eligendi temporibus voluptatum enim aliquam rem beatae velit nesciunt nostrum, aspernatur reprehenderit? Pariatur, voluptate ipsam?</p> -->
+            </div>
+
+            <div id="footer">     
+                <p>Copyright &copy; 2021</p>
+            </div>
+        </div>   <!-- Container div id closing tag -->
+
     </body>
+
 </html>
