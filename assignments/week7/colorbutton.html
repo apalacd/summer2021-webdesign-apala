@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press the button to change the color!</title>
+</head>
+<body>
+
+    <h1>Press the button below to change Background Color</h1>
+    <button id="colorbutton">Click for Magic!</button>
+    <p id="colorcode"></p>
+
+    <script>
+
+        var button = document.getElementById("colorbutton");
+
+        button.addEventListener("click", function () {
+            // var color = "rgb(255, 0, 0)";
+            //document.body.style.backgroundColor = color;
+
+            var redColor = Math.floor(Math.random() * 256);
+            var greenColor = Math.floor(Math.random() * 256);
+            var blueColor = Math.floor(Math.random() * 256);
+
+
+            var color = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
+
+            console.log(color);
+            document.getElementById("colorcode").innerHTML = color;
+            // DOM way of stylizing element - In "parent.child.grandchild.styleelement" way
+            document.body.style.backgroundColor = color;
+
+            // In CSS it's background-color, while in JS DOM it is the style element backgroundColor.
+        });
+
+    </script>
+    
+</body>
+</html>

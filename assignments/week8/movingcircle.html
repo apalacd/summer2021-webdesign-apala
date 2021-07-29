@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving the Circle</title>
+
+    <style>
+        #circle {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        //$(document).ready(function () {    - is same as $(function()) 
+        $(function() {   // This is required as a first statement in order to execute jQuery under script
+            //  $("#circle").keypress(function () {}); // .keypress() activates the selected element and the function executes the action code simultaneously when the element is selected.
+            $("#circle").keypress(function (event) {
+
+                if (event.which == 97) {
+                
+                console.log((event.which) + "was pressed");
+                }
+
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

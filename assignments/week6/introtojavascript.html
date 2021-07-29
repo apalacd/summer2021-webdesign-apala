@@ -257,7 +257,8 @@
         var income2021 = null;
         var value;
 
-        if ("  "){
+        //if ("  "){
+        if (undefined){  
             console.log("Truthy!");
         } else {
             console.log("Falsy!");
@@ -337,6 +338,394 @@
             }
             
         }
+        // Nesting loops  -  Not recommended. It is acceptable to limit nesting of loops to 2 levels. More than 2 levels makes the loops ineffient in terms of resources.
+
+        // This set of loops will run for 1000 times and print "hello" 1000 times
+        for (var i = 0; i < 10; i = i +1){
+
+            for ( var e = 0; e < 10; e = e + 1) {
+
+                for (var o = 0; o < 10; o = o + 1)
+                    console.log("hello");
+            }
+        }
+
+        //for (var i = 0; i < 10; i++) {}
+
+        //for (var i = 0; i > 10; i++) {}
+
+        // FUNCTIONS - Group of Code that runs when function name is called.
+        
+            function myFirstFunction() {
+                console.log("*");
+                console.log(" *");
+                console.log("  *")
+                console.log(" *");
+                console.log("*");
+
+                for ( var i = 0; i < 10; i = i + 1){
+                    console.log("$");
+                }
+            }
+
+            // myFirstFunction();
+            // myFirstFunction();
+            // myFirstFunction();
+
+            for (var i = 0; i < 100; i = i + 1) {
+                myFirstFunction();
+            }
+
+            console.log("Done with myFirstFunction!")
+
+            // Scopes
+
+            var a = "Hello!";
+
+            function mySecondFunction(){
+                
+                // var a = "Good Bye!";
+                var b = "Good Day!";
+
+                console.log(a);
+            }
+
+            // Cannot access variable b because it is in a private scope.
+            
+            // console.log(b);
+
+            console.log(a);
+
+            mySecondFunction();
+
+            // USEFUL VARIABLE AND FUNCTION NAMES
+
+            var a = 19;
+            var age = 19;
+            // useAge would be the "best" name of this set.
+
+            var userAge = 19;
+             var aValueThatIsReallyImportantToAnIndividualBecauseItSignifiesHowLongTheyHaveLived = 19;
+
+             function a() {}
+
+             function someFunction() {}
+             // addTwoNumbers best name for this set.
+             function addTwoNumbers() {}
+
+             function accepts2NumbersAndAddsThemTogether() {}
+
+             // Arguments and Parameters
+             // Argument are the data that WILL BE stored in a Parameter.
+             // Parameter is a special variable that belong to a function.
+
+             function makeItRain(value) {
+
+                // var strength = value;
+
+                if (value == 1){
+                    console.log("A drizzle has started.");
+                } else if (value ==2) {
+                    console.log("It has started raining.");
+                } else if (value == 3) {
+                    console.log("It's raining cats and dogs");
+                }
+             }
+
+            makeItRain(1);
+
+            makeItRain(3);
+
+            makeItRain(1);
+
+            makeItRain(4);
+
+
+            // Math.pow()
+            // Math.sqrt()
+
+            function hypotenuse(width, height) {
+                //var width = 10;
+                //var height = 4;
+
+                var squaredWidth = Math.pow(width, 2);
+                var squaredHeight = Math.pow(height, 2);
+
+                var squaredSum = squaredWidth + squaredHeight;
+
+                var results = Math.sqrt(squaredSum);
+
+                console.log(results);
+
+                // Same code, but in a single line.
+                // console.log(Math.sqrt((Math.pow(width, 2) + Math.pow(height, 2))));
+
+            }
+
+            var result = hypotenuse(19, 11);
+
+            hypotenuse(4, 16);
+            console.log("Hello there!");
+
+            // Returning Values from Functions
+
+            var myVar = 10;
+
+            // "Returning" a value from a variable is as easy as calling it.
+
+            myVar;
+
+            function exampleFunction() {
+                var a = 100;
+                var b = 50;
+
+                // allows the function to "send back" a single value.
+                return "Function has finished";
+
+            }
+
+            var myNumber = exampleFunction();
+
+            console.log(myNumber);
+
+            // Putting it all together for Functions
+
+
+            function add2Numbers(number1, number2) {
+                var sum = number1 + number2;
+                return sum;
+            }
+
+            var myResults = add2Numbers();
+            var sendToConsole = add2Numbers(myResults, myResults);
+            console.log(sendToConsole);
+
+            // Arrays & Objects
+
+            var thisIsAVariable = "One Thing";
+
+            thisIsAVariable = "Another Thing";
+
+            var firstDay = "Monday";
+            var secondDay = "Tuesday";
+            // etc.
+
+            // empty Array.
+            var myArray = [];
+
+            var mySecondArray = [1, 2, 3, 4, 5];
+            //          Indexes  0, 1, 2, 3, 4
+
+            var myThirdArray = ["A", "B", "C"];
+            //                   0    1    2
+
+            // Array Indexes = an "address" of an item in an array
+            // Array Element = an "item" in an Array.
+            // Indexes start from 0, not 1!
+
+            //console.log(mySecondArray);
+
+            var myNum = mySecondArray[3];
+            console.log(myNum);
+            
+            var myText = myThirdArray[];
+            console.log(myThirdArray);
+
+
+            // ARRAY METHODS
+
+            // POP()
+            //Get the LAST value in an array and REMOVE it
+             console.log ( myThirdArray.pop() );
+
+             console.log( myThirdArray );
+
+            // PUSH()
+            //Putting a value at the END of the array
+            myThirdArray.push( "c") ;
+
+            // SHIFT()
+            // Gets the FIRST value in an array and REMOVES it from that array
+            console.log( myThirdArray.shift() );
+            console.log( myThirdArray );
+
+            // UNSHIFT()
+            // Putting a value at the START of the array
+            myThirdArray.unshift("a");
+
+            console.log( myThirdArray );
+
+            // LENGTH    - property of an array
+            // Also very useful, returns the total count of elements in that array.
+            //  length of array is the number of elements in the array regardless of the type of data in the array 
+            console.log( myThirdArray.length );
+
+
+            var myRandomArray = [ 10, 600, "hello", true ];
+            var myProperArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            
+            // Updating a single value in an Array
+            var myEmployeeSalaries = [16000, 21000, 40000, 7000];
+           
+            // use the index when you are assigning the value, otherwise you will replacing the ENTIRE ARRAY
+            myEmployeeSalaries[1] = 23000;
+
+            // MULTI-DIMENSIONAL ARRAY = when there are Arrays within Arrays
+            // To make it readable you can indent it in the following way :
+            var mapShapeCoords = [ 
+                [14, 28], 
+                [19, 36], 
+                [8, 32] 
+            ];
+
+            console.log(mapShapeCoords);
+
+            //mapShapeCoords[index number of the array of arrays][index number of the inner array]
+            mapShapeCoords[2][1];  // Access number 32
+            mapShapeCoords[0][0];  // Access number 14
+
+            // Updating number 8 to a number 9.
+            mapShapeCoords[2][0] = 9;
+
+            console.log(mapShapeCoords);
+
+            var sum = mapShapeCoords[0][0] + mapShapeCoords[2][1];
+
+            console.log(sum);
+
+            // Combining Loops and Arrays.
+
+            var salaries = [19900, 34998, 29990, 49976, 88944];
+        // Task: Add a 5% bonus for everyone
+
+        // Bonus for 1 Salary START
+        var oldSalary = salaries[0];
+        var percentBonus = 0.5;
+        var newSalary = oldSalary + (oldSalary * percentBonus);
+
+        salaries[0] = newSalary;
+        // Bonus for 1 Salary END
+        
+        console.log(salaries);
+
+        var oldSalary2 = salaries[1];
+        var percentBonus2 = 0.5;
+        var newSalary2 = oldSalary + (oldSalary * percentBonus);
+
+        salaries[1] = newSalary;
+
+        for (var i = 0; i < salaries.length; i = i + 1) {
+            var old = salaries[i];
+            salaries[i] = old + (old * .05);
+        }
+
+        console.log(salaries);  
+        
+        //Objects are VALUES, or datatype      assigned to something and need the semi-colon to end the statement.
+        var myFirstObject = {};
+
+        // Code blocks usually end an If, Loops, or Functions and they DON'T end with a semicolon.
+        if  (false) {}
+
+        //Object has the key value pair. and Keys are always strings for objects
+        var mySecondObject = {
+            "name": "Eduardo",
+            "age": 31
+        }
+
+        var myEmployee1 = ["Apala", 50, "part-time", "SVPM"];
+
+        var myEmployee2 = {
+            "name": "Eduardo",
+            "age": 31,
+            "status": "part-time",
+            "employer": "MEDA",
+            "active": true,
+            "current position": "instructor",      //The last key value pair does not have a comma. The system will assume an empty key value pair in case a comma is put after the last key-value pair.
+            "daysWorked": [14, 19, 20, 21],
+            "education": [                // Value for this key is an array of properties
+                {
+                    institution: "CCSF",
+                    years: 3,
+                    days: [18, 19, 20]
+                },
+                {
+                    institution: "CCSF",
+                    years: 3,
+                    days: [18, 19, 20]
+                },
+                {
+                    institution: "Berkeyley City College",
+                    years: 1
+                }
+            ]
+            
+        };
+
+        // Order in the key-value pairs within an object definition does not matter since they get accessed through the key that is a string and not a number like in arrays.
+
+        // Use [] to access the key to the values of the object
+    
+
+        // Here is how to get value from an array within a property of an Object within an object key value pairs and print the value
+        console.log( myEmployee2.education[1].days[1] );
+        
+        // Bracket Notation, needs to have a string datatype to access that value inside of the object.
+        console.log( myEmployee2["status"] );
+
+        // Dot Notation, must be a String with NO SPACES, should NOT use quotes.
+        myEmployee2.status;
+        myEmployee2.age;
+        console.log( myEmployee2.active );
+
+        
+
+        // If your key has a space in it, you CANNOT use dot notation as it will cause syntax error. MUST USE SQUARE BRACKETS NOTATION IN THIS SITUATION.
+        myEmployee2["current position"];
+
+        console.log(myEmployee2);
+
+        var myEmployee1 = ["Eduardo", 31, "part-time", "MEDA"];
+
+        myEmployee2[]
+
+
+        // OBJECTS : Properties & Methods.
+        // PROPERTIES : are "variables" that belong to an object
+        // METHODS : are "functions" that belong to an object
+        // Objects can include properties, functions and method
+
+        var myThirdObject = {
+            myPropert: 10,
+            /*myMethod: function sayHello() {
+                console.log("Hello");
+            */
+
+            //Anonymous function - without a value
+            myMethod: function () {
+            console.log("Hello");
+            }
+        };
+
+        console.log( myThirdObject.myProperty );
+
+        myThirdObject.myMethod();
+        console.log("hello");
+
+        //base number and exponent
+        Math.pow(10, 2);
+
+        Math.sqrt(100);
+
+        // Methods
+        salaries.push();
+        salaries.pop();
+        salaries.unshift();
+        salaries.shift();
+
+        // Array functions
+        salaries.length
+
 
      </script>
     

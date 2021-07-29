@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to jQuery</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        h1 {
+            color: red;
+        }
+
+        input {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button id="darkmode">Dark Mode</button>
+    <button id="lightmode">Light Mode</button>
+    <br />
+    <label for="number1">Enter First Number</label>
+    <input type="number" id="number1" />
+    <br />
+    <label for="number2">Enter Second Number</label>
+    <input type="number" id="number2" />
+    <br />
+    <button id="calculate">Calculate!</button>
+    <p id="results"></p>
+
+    <h1>My Webpage</h1>
+        
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, vero dolores suscipit illo officiis quos amet rerum numquam provident magni molestias earum assumenda aliquid! Maxime consequatur corrupti cumque dignissimos dolores?</p>
+
+    
+    <script>
+
+       /*
+        Math.random();  // returns a value 0 - .9~; Never actually reaches 1. Always under whole number of 1.
+
+        /* for (var i =0; i < 100; i++) {
+            console.log(Math.random() );
+        }
+        */
+
+        /*for (var i =0; i < 100000; i++) {
+            var myNumber = Math.floor( (Math.random() * 10) + 1 );
+
+            if (myNumber > 10) {
+                console.log(myNumber);
+            }
+        } 
+        
+            console.log("done");
+        */
+
+        // 0 - 255
+
+        // Math.random() * 256;
+        // 0 * 256 = 0;
+        // .99 * 256 = 253.44
+        // .999 * 256 = 255.74
+        // .9999 * 256 = 255.97
+    /*
+        Math.floor(10.9);  // becomes 10, rounds down number
+        Math.ceil(10.1);   // becomes 11, rounds up the number provided
+        Math.round(10.5);  // becoes 11, rounds up if .5+ or down if
+
+        // Getting a number between 1 and 10.
+        Math.random() * 10;
+        // 0 * 10 = 0;
+        // .9999 * 10 = 9.9999
+
+        (Math.random() * 10) + 1;
+        // 0 * 10 = 0, 0 + 1 =1
+        // .9999 * 10 = 9.999, 9.999 + 1 = 10.999
+
+        Math.floor((Math.random() * 10) + 1);
+        // 1, rounded DOWN to 1.
+        // 10.999, rounded DOWN to 10.
+    
+        Math.ceil(MAth.random() * 9) + 1;
+        // 0 * 9 = 0; rounding up will be 0.
+        // .9999 * 9 = 8.9991; rounding up will be 9
+
+        // Make sure you have Document Ready statement for jQuery.
+        // $() is the jQuery function, you can also write jQuery();
+        // DEPRECATED :  $(document).ready(function () {}); 
+        // Do not use this Deprecated statement for jQuery
+    */
+    //-------------------------------------
+
+        $(function() {
+
+            $("#calculate").click(function() {
+                var number1 = $("#number1").val();
+                var number2 = $("#number2").val();
+
+                var sum = parseInt(number1) + parseInt(number2);  //converts numbers to integers ie; whole numbers without decimals
+
+                //$("#results").html(sum);  // JS DOM:  .innerHTML
+                $("#results").append(sum);  // JS DOM:  .innerHTML
+
+            });
+
+            // Selects the element with ID of lightmode, and runs code when it is clicked on.
+            $("#lightmode").click(function () {
+                // Selects the body and changes the background color and text color.
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+            });
+
+            $("#darkmode").click(function() {
+                console.log("Clicked!");
+
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+            });
+
+            // Selects all H1 elements, and stores a reference in myHeadings variable.
+            var myHeadings = $("h1");
+
+            // Changes the CSS of myHeadings.
+            myHeadings.css("background-color", "rgb(255,0,0)");
+            myHeadings.css("color", "rgb(255,0,0)");
+
+            // Changes the CSS of myHeadings with one "line";
+            myHeadings.css({
+                "background-color": "rgb(255,0,0)",     // for red
+                "color": "rgb(0,255,0)",              // for green
+                "font-family": "Arial",
+                "font-size": "48px"
+            });
+
+            // JS DOM: myHeadings.style.color = "rgb(255,0,0)";
+
+                // To select elements on the webpage using jQuery, you can select using CSS selectors.
+                // $(".myClass");
+                // $("#myID");
+                // $("ul li");
+                // $("#divID p");
+
+        });
+
+    </script>
+    
+</body>
+</html>

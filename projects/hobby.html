@@ -3,48 +3,331 @@
     <head>
         <meta charset="utf-8" />
         <title>Hobby Project</title>
+        <meta name="Description" content="Renewed and Repurposed Creatives">
+        <meta name="Author" content="Apala Chandola">
 
-        <h1>My Hobby Project</h1>
+        <style>
 
-        <p>Hi, I am Apala! I have many hobbies including creating new, useful items with recyclables, creative art and sculpting with biodegradable materials, making healthy simulated non-vegetarian dishes with vegetarian ingredients, plant propagation, music, yoga, gardening, traveling, reading, photography, learning new skills and more… In fact, I fall short of time in pursuing them all at once and take on only one or two of my hobbies and the related projects at a time to be able to finish them.  For this assignment project, I will share about one of my many hobbies - Creating new and purposeful items with recyclable materials. I challenge myself to come up with new creative ways to renew plastic containers and glass bottles. I like to put them to a good use as and when I can. harming our environment and nature. </p>
-        <p>Here I will show as to how a new self watering planter can be made with a used regular plastic milk can.</p>
-      
-        <h2>Self Watering Planter</h2>
-       
-        <h3>Materials required</h3>
-       
-        <ul>
-            <li>Empty plastic milk can. The taller the better!</li>
-            <li>A pair of Scissors</li>
-            <li>A knife or a long nail</li>
-            <li>Small river rocks or pebble rocks</li>
-            <li>Sharpie markers</li>
-            <li>Acrylic paints and brush to paint the planter</li>
-        </ul>
-        
-        <h3>Instructions : </h3>
-        <ol>
-            <li>Take the plastic milk can. Mark it with a sharpie just below the handle as shown in the picture 1.1.</li>
-            <li>Using scissors, cut along the lines marked as shown in picture 1.2.</li>
-            <li>Punch holes in the top half of the can with scissors or a sharp knife as shown in picture 1.3.</li>
-            <li>Put some small pebble rocks inside the bottom half of the can as shown in the picture 1.4.</li>
-            <li>Now invert the top half of the can and carefully place it inside of the bottom half as shown in picture 1.5.
-            <li>Paint the exterior of the can with your favorite acrylic paint to give it a fresh look.</li>
-            <li>Viola, now you have a new planter ready!</li>
-        </ol>
-        
-        <p>For more ideas on how to create something new with your used recyclable plastic containers and bottles, you can visit <a href="https://feltmagnet.com/crafts/best-plastic-bottle-crafts" target="_blank">this webpage</a>.</p>
+            #container {
+                width: 1100px;
+                margin-right: auto;
+                margin-left: auto;
+                
+            }
+
+            #header {
+                background-color: gainsboro;
+                color: midnightblue;
+                text-align: center;
+                font-family: "Arial";
+                font-size: 20px;
+                text-transform: uppercase;
+                border-radius: 10px;
+                
+            }
+
+            /*#header h1 {
+                margin-block-end: 0;
+            }*/
+
+            #main {
+                margin-top: 25px;
+                padding: 20px;
+                background-color: darkslategrey;
+                color: rgb(245, 243, 243);
+                font-family: "Arial";
+                font-size: 15px;
+                border-radius: 14px;
+                line-height: 18px;
+                text-align: justify;
+            }
+
+            /*#main p {
+                margin-block-start: 0;
+                
+            }*/
+
+            /*#article {
+                /*display: inline-block;
+                padding-left: 93px;
+                width: 500px;
+                padding-right: 20px;
+                letter-spacing: normal;
+            } */
+            
+
+           /* #main #photosection {
+                display: inline-block;
+                /*width: 200px;
+                /* height: 100%; */
+                /* background-color:orangered; 
+                vertical-align: top;
+                border-radius: 14px;
+            } */
+            
+            #main #article {
+                display: inline-block;
+                width: 500px;
+                padding-left: 93px;
+                padding-right: 58px;
+                letter-spacing: normal;
+            }
+
+            #main #section {
+                display: inline-block;
+                width: 200px;
+                /* height: 100%; */
+                /* background-color:orangered; */
+                vertical-align: top;
+                border-radius: 14px;
+            }
+
+            #main #section img {
+                border-radius: 10px;
+            }
+
+            #footer {
+                margin-top: 28px;
+                background-color:rosybrown;
+                height: 28px;
+                border-radius: 14px;
+                font-size: 12px;
+                text-align: center;
+                text-transform: uppercase;
+                color: white;
+                font-family: "Arial";
+            }
+
+            #intro-text {
+                text-align: justify;
+            }
+            #recycle-containers {
+                display: inline-block;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            #planter-text img {
+                border-radius: 10px;
+                /*margin-left: 220px;*/
+                margin: auto;
+                display: block;
+            }
+
+            figure figcaption {
+
+                text-align: center;
+
+            } 
+
+            #planter-text p {
+                padding-left: 107px;
+                /*font-style: italic;
+                font-size: large;
+                font-weight: bold;*/
+                padding-right: 83px;
+            }
+
+            h3 {
+                padding-left: 93px;
+                padding-right: 73px;
+
+            }
+
+            ul {
+                padding-left: 107px;
+                padding-right: 88px;
+
+            }
+
+            /*ol {
+                padding-left: 107px;
+                padding-right: 88px;
+            }*/
+
+            #viola {
+                font-style: italic;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            #photosection {
+              padding-left: 3px; 
+
+            }
+            #photosection img {
+              border-radius: 10px;
+            }
+
+            #references {
+                padding-left: 63px;
+                padding-right: 63px;
+            }
+
+            #summary-text {
+                text-align: justify;
+            }
+
+            #references #credits {
+                font-size: large;
+                font-weight: bold;
+                color: burlywood;
+            }
+
+            #references #photo-credits {
+                font-size: large;
+                font-weight: bold;
+                color: burlywood;
+            }
 
 
-        <p>In todays world, there are many items whether consumable or not, are packaged in plastic containers and glass bottles. As a result, a lot of recyclable plastic and glass ends up in the landfill if not reused or repurposed. According to some studies, it takes a plastic and glass bottles anywhere from 10 to 100 years to decompose [Credit: <a href="https://thisisplastics.com/environment/things-you-might-not-know-about-landfills/)" target="_blank">thisplastics.com</a>]. Plastic buried deep in landfills can leach harmful chemicals that spread into the groundwater hence harming our environment and nature. With the recent pandemic, even more of plastics and glass has made it to the landfills. As a responsible human, it becomes our responsibility to try and reduce this waste as much as possible by renewing, reusing and repurposing these materials. To see how these recycled plastics are being used, check out <a href="https://www.recycleandrecoverplastics.org/consumers/kids-recycling/plastics-can-become/" target="_blank">recycleandrecoverplastics.org</a> </p>
+        </style>
 
-        <!--Reference List : 
+    </head>
 
-        Plastic Bottle Crafts:
-        Credit: https://feltmagnet.com/crafts/best-plastic-bottle-crafts
-        
-        Plastics and Environment
-        Credit: https://thisisplastics.com/environment/things-you-might-not-know-about-landfills/
+    <body>
+
+        <div id="container">
+
+            <div id="header">
+                <h1> My Strange Hobby Project</h1>
+            </div>
     
-        Recycling Plastics
-        Credit: https://www.recycleandrecoverplastics.org/consumers/kids-recycling/plastics-can-become/ -->
+            <div id="main">
+
+                <div id = "article">
+            <!--<h1>My Hobby Project</h1>-->
+
+                    <p>Hi, I am Apala! </p>
+                    <p id="intro-text">I have many hobbies including creating new, useful items with recyclables, creative art and sculpting with biodegradable materials, making healthy simulated non-vegetarian dishes with vegetarian ingredients, plant propagation, music, yoga, gardening, traveling, reading, photography, learning new skills and more… In fact, I fall short of time in pursuing them all at once and take on only one or two of my hobbies and the related projects at a time to be able to finish them.  For this assignment project, I will share about one of my many hobbies - Creating new and purposeful items with recyclable materials. I challenge myself to come up with new creative ways to renew plastic containers and glass bottles. I like to put them to a good use as and when I can. This allows me to contribute my bit towards saving our environment and nature. 
+                    </p> 
+
+                    <p>Here I will show as to how a new self watering planter can be made with a used regular plastic milk can.</p>
+
+                </div><div id="section">
+                    <img id="recycle-containers" src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/pexels-anna-shvets-reuse-repurpose.jpg" alt="recyclable containers of various shapes and sizes"/>
+    
+                </div>
+
+                <div id="planter-text">
+
+                    <h2>Self Watering Planter</h2>
+                
+                    <h3>Materials required</h3>
+            
+                    <ul>
+                        <li>Empty plastic milk can. The taller the better!</li>
+                       
+                        <li>A pair of Scissors</li>
+                      
+                        <li>A knife or a long nail</li>
+                    
+                        <li>Small river rocks or pebble rocks</li>
+                      
+                        <li>Sharpie markers</li>
+                      
+                        <li>Acrylic paints and brush to paint the planter</li>
+                    </ul>
+                    
+                    <h3>Instructions : </h3>
+                    
+                        <p>Take the plastic milk can. Mark it with a sharpie just below the handle as shown in the picture to cut.</p>
+                       
+                        <figure>
+                        <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/Pic1_med_scaled.jpg" alt="Marking with a sharpie in order to cut along lines." />
+                        <figcaption>Marking container to cut</figcaption>
+                        </figure>
+                        
+                        <p>Using scissors, cut along the marked lines and separate the top from the bottom half of the container as shown in the picture below.</p>
+                       
+                        <figure>
+                        <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/Pic2_med_scaled.jpg" alt="top half is cut and separted from the bottom half" />
+                        <figcaption>Separate top and bottom half of container</figcaption>
+                        </figure>
+                        
+                        <p>Punch holes in the top half of the can with scissors or by a heating the tip of a knife in flame,as shown in the picture below.</p>
+                       
+                        <figure>
+                        <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/Pic3_med_scaled.jpg" alt="holes made on top of milk container" />
+                        <figcaption>Make holes for drainage</figcaption>
+                        </figure>
+                        
+                        <p>Stick the lid to the container with glue gun as shown in picture below.</p>
+                       
+                        <figure>
+                        <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/Pic4_med_scaled.jpg" alt="lid stuck on top of the top half of the container"/>
+                        <figcaption>Lid glued on top to create space for drainage</figcaption>
+                        </figure>
+                       
+                        <p>Now invert the top half of the can and carefully place it inside of the bottom half aligning to the bottom as shown in picture. <br /> Tip : You can put some small pebble rocks inside the bottom half of the can for good drainage and water conservation for self watering the roots of the plants. You can water the plant through the hole as shown in the picture below</p>
+                        
+                        <figure>
+                        <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/Pic5_med_scaled.jpg" alt="self watering planter made with empty milk container" />
+                        <figcaption>Self watering planter</figcaption>
+                        </figure>
+                        
+                        <p>Paint the exterior of the can with your favorite acrylic paint to give it a fresh look. Add potting soil and start plants from seeds or repot seedlings in the planter. </p>
+                        
+                        <figure>
+                        <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/Pic6_med_scaled.jpg" alt="growing edible fenugreek plants in planter made with renewed repurposed milk container." />
+                        <figcaption>Edible fenugreek plants growing in the planter.</figcaption>
+                        </figure>
+                     
+                    <br />
+
+                    <p id="viola">Viola, now you have a new planter ready!</p>
+
+                </div>
+
+                <br />
+                <br />
+
+
+                <div id="references">
+                
+                
+                <p>For more ideas on how to create something new with your used recyclable plastic containers and bottles, you can visit <a href="https://feltmagnet.com/crafts/best-plastic-bottle-crafts" target="_blank">Plastic Bottle Crafts</a>.</p>
+                
+                <div id="photosection">
+
+                <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/pexels-ready-made-recycle-symbol-on-a-smartphone-screen_scaled1.jpg" alt="recycle symbol on a smartphone screen" />    
+                <img src="/Users/apala/MEDA/summer2021-webdesign-apala/projects/hobby_images/pexels-daria-liudnaya-repurposed-jars-bottles-boxes-scaled1.jpg" alt="Repurposed jars bottles and boxes in renewed forms and colors."/> 
+
+                </div>
+
+                <p id="summary-text">In today's world, there are many items whether consumable or not, are packaged in plastic containers and glass bottles. As a result, a lot of recyclable plastic and glass ends up in the landfill if not reused or repurposed. According to some studies, it takes a plastic and a glass bottle anywhere from 10 to 100 years to decompose [Credit: <a href="https://thisisplastics.com/environment/things-you-might-not-know-about-landfills/)" target="_blank">Plastics and Environment</a>]. Plastic buried deep in landfills can leach harmful chemicals that spread into the groundwater hence harming our environment and nature. With the recent pandemic, even more of plastics and glass has made it to the landfills. As a responsible human, it becomes our responsibility to try and reduce this waste as much as possible by renewing, reusing and repurposing these materials. To see how these recycled plastics are being used, check out <a href="https://www.recycleandrecoverplastics.org/consumers/kids-recycling/plastics-can-become/" target="_blank">Recycling Plastics</a>.</p>
+
+                <p id="credits">Credits : </p>    
+                <p>Plastic Bottle Crafts - Source :  https://feltmagnet.com/crafts/best-plastic-bottle-crafts</p>
+                <p>Plastics and Environment - Source :  https://thisisplastics.com/environment/things-you-might-not-know-about-landfills/</p>            
+                <p>Recycling Plastics - Source :  https://www.recycleandrecoverplastics.org/consumers/kids-recycling/plastics-can-become/</p>
+                
+                <br />
+                <p id="photo-credits">Photo Credits:</p>
+                <p>Repurposed jars bottles -  Source : Pexels.com Free Images </p>
+                <p>Recycle symbol on a smartphone screen -  Source : Pexels.com Free Images </p>   
+                <p>Recyclable containers of various shapes and sizes - Source : Pexels.com Free Images </p>
+               
+
+                <!--Reference List : 
+
+                Plastic Bottle Crafts:
+                Credit: https://feltmagnet.com/crafts/best-plastic-bottle-crafts
+                
+                Plastics and Environment
+                Credit: https://thisisplastics.com/environment/things-you-might-not-know-about-landfills/
+            
+                Recycling Plastics
+                Credit: https://www.recycleandrecoverplastics.org/consumers/kids-recycling/plastics-can-become/ -->
+
+                </div>
+
+        
+            </div>
+
+            <div id="footer">
+                <p>Copyright &copy;	&reg; 2021, all rights reserved</p>
+            </div>
+        </div>
