@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #container{
     width: 900px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin: 0 auto;
 }
 
 
 header {
     border: 1px solid green;
-    background-color: ;
-
-
-
+    background-color: rgb(245, 245, 245);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 header h1 {
@@ -21,7 +25,7 @@ header h1 {
 }
 
 nav ul {
-    border: 1px solid black;
+    /*border: 1px solid black; */
     text-align: right;
 
 }
@@ -61,6 +65,11 @@ main{
     overflow: auto;
     padding: 40px;
 
+}
+
+main#gallery img {
+    width: 195px;
+    margin: 5px;
 }
 
 /*  if you type an element like footer { } without any css property like color, size etc, or incorrect syntax  then it will highlight it as underlined with squiggly line.*/

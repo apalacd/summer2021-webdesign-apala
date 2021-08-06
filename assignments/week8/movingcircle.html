@@ -23,11 +23,69 @@
         //$(document).ready(function () {    - is same as $(function()) 
         $(function() {   // This is required as a first statement in order to execute jQuery under script
             //  $("#circle").keypress(function () {}); // .keypress() activates the selected element and the function executes the action code simultaneously when the element is selected.
-            $("#circle").keypress(function (event) {
+           /* $("#circle").keypress(function (event) {
 
                 if (event.which == 97) {
                 
                 console.log((event.which) + "was pressed");
+                }
+
+            });*/
+
+            // Copied FROM WEEK 7 RANDOM COLOR CODE
+            $("#circle").click(function () {
+                var redColor = Math.floor(Math.random() * 256);
+                var greenColor = Math.floor(Math.random() * 256);
+                var blueColor = Math.floor(Math.random() * 256);
+                var color = "rgb(" + redColor + "," + greenColor + ","+ blueColor + ")";
+                console.log(color);
+                document.body.style.backgroundColor = color;
+            });
+
+            // Listens to any keypress regardless of what is being focused on webpage.
+            $(document).keypress(function (event) {
+
+                // A set of if statements that activated based on the key pressed. event.which is an event action.
+                // Numbers are the translated values for keyboard keys for letters A, D, W, S
+                // Reference: lookup keyboard translated values for key board keys.
+                if (event.which == 97) {
+                    
+                    // Get the existing margin-left of the circle.
+                    var existingMargin = $("#circle").css("margin-left");
+
+                    // Convert string to a number.
+                    existingMargin = parseInt(existingMargin);
+
+                    // Subtract 100 to the number.
+                    existingMargin = existingMargin - 100;
+
+                    // Assign number to margin-left of the circle.
+                    $("#circle").css("margin-left", existingMargin + "px");
+                
+                } else if (event.which == 100) {
+
+                    var existingMargin = $("#circle").css("margin-left");
+                    existingMargin = parseInt(existingMargin);
+                
+                // Add 100 to the number.
+                existingMargin = existingMargin + 100;
+                    $("#circle").css("margin-left", existingMargin + "px");
+                
+                } else if (event.which == 119) {
+
+                    // Get existing margin-top of the circle.
+                    var existingMargin = $("#circle").css("margin-top");
+                    existingMargin = parseInt(existingMargin);
+                    existingMargin = existingMargin - 100;
+                    $("#circle").css("margin-top", existingMargin + "px");
+
+                } else if (event.which == 115) {
+
+                    var existingMargin = $("#circle").css("margin-top");
+                    existingMargin = parseInt(existingMargin);
+                    existingMargin = existingMargin + 100;
+                    $("#circle").css("margin-top", existingMargin + "px");
+
                 }
 
             });
@@ -37,6 +95,6 @@
     </script>
 </head>
 <body>
-    
+     <div id="circle"></div>
 </body>
 </html>

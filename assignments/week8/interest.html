@@ -33,7 +33,7 @@
             /* height: 600px; /* remove later */
             box-shadow: 0 0 20px 40px rgb(199, 196, 196);
             border-radius: 10px;
-            border: 1px solid darkblue;
+            /*border: 1px solid darkblue; */
             margin: 40px auto 0 auto;
             padding: 20px;     
 
@@ -91,28 +91,26 @@
     <div id="container">
         <div id="instructions"></div>
 
-            <h1>Basic Interest Calculator</h1>
-            <p>Use this Calculator to figure out the interest due per month for the borrowed amount</p>
+                <h1>Basic Interest Calculator</h1>
+                <p>Use this Calculator to figure out the interest due per month for the borrowed amount</p>
 
-        
-            <div id="form">
-                <label for="loan-amount">Loan Amount</label></div></br>
-                <input id="loan-amount" type="number" placeholder="10000/></br>
-                <label for="apr">APR Percentage</label></br>
+        </div>
+        <div id="form">
+                <label id="loan-label" for="loan-amount">Loan Amount</label></div><br />
+                <input id="loan-amount" type="number" placeholder="10000"><br />
+                <label id="apr-label" for="apr">APR Percentage</label><br />
                 <input id="apr" type="number" placeholder="23.99"/></br>
                 <!-- IF we have extra time, allow an option that selects compound interest frequency : daily, monthly or yearly.-->
                 <button id="submit">Calculate!</button>
-
-                <div id="results">
-                    <p id="result-value"></p>
-                    <p id="disclaimer">Interest Rate is calculated on Monthly Coumpounding Interest, for a 30 days month period. We are not responsible for any errors or incorrect information provided by this tool. Pls contact your local financial advisor before making any financial decisions.</p>
-                </div>
-
-            </div>
+        </div>
+        <div id="results">
+                <p id="result-value"></p>
+                <p id="disclaimer">Interest Rate is calculated on Monthly Coumpounding Interest, for a 30 days month period. We are not responsible for any errors or incorrect information provided by this tool. Pls contact your local financial advisor before making any financial decisions.</p>
         </div>
 
-        
+            
     </div>
+
     
 </body>
 </html>

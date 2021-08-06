@@ -14,14 +14,18 @@ $(document).ready(function () {
 
     // Attach a click listener to the calculate! button
     $("#submit").click(function () {
+
+        // Grab the values from the text input boxes.
         var loanAmount = $("#loan-amount").val();
         var apr = $("#apr").val();
 
         // Try to convert the input values into JavaScript Numbers. Will give Nan if unable to convert.
-        loanAmount = parseInt(loanAmount);
-        apr = parseInt(apr);  // SHOULD BE FLOAT to include decimals(pennies)
+        //loanAmount = parseInt(loanAmount);
+        loanAmount = parseFloat(loanAmount);
+        //apr = parseInt(apr);  // SHOULD BE FLOAT to include decimals(pennies)
+        apr = parseFloat(apr);
 
-        console.log(apr);
+        //console.log(apr);
 
         var error = "none";
 
@@ -31,7 +35,7 @@ $(document).ready(function () {
             error = "apr";
         }
 
-        // Equation for finding out the interest for the "first" month"
+        // Equation for finding out the interest for the "first" month.
         var interestPrice = loanAmount * ((apr / 100)/ 12);
 
         // Remove any extra decimal places and keep only up to hundredth place.
@@ -43,12 +47,16 @@ $(document).ready(function () {
         // "Update" the contents of the paragraph with the string we built.
         if (error == "none") {
             $('#result-value').html(resultsText);
-        } else if (error == "loan" {
-            $('#result-value').html
+        } else if (error == "loan") { 
+            $("#result-value").html("The value you provided for your loan is not a valid number!");
+            $("#loan-label").css("color", "red");
+        } else if (error == "apr") {
+            $('#result-value').html("The value you provided for your APR percentage is not a valid number!");
+            $("#apr-label").css("color", "red");
         }
         
-        $("#result-value").html(resultsText);
-        console.log(loanAmount, apr);
+        /*$("#result-value").html(resultsText);
+        console.log(loanAmount, apr);*/
 
     });
 });
