@@ -56,6 +56,10 @@ nav ul li a:active {
 
 main{
     border: 1px solid blue;
+    background-color: rgb(245, 245, 245);
+    /*height: 500px;  removing height as the content will decide/determine the height*/
+    overflow: auto;
+    padding: 40px;
 
 }
 

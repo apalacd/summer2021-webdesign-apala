@@ -1,0 +1,231 @@
+				Portfolio Project design_brief
+				==============================
+
+
+
+Colors to be used 
+=================
+
+
+body 	background-color: #183b57
+     	color: #e7e3e9
+
+
+a 	color:#f5ac84
+
+h2  	color: #a0f5c1
+
+
+header 	background-color: #d4d5d6 
+
+header 	h1 color:         #4c275a
+
+ 	h2 color: 	#604963fa
+
+header 	ul color: white
+    
+header 	ul li background-color: #e1c7eb
+    
+header 	ul li a:link color: white
+    
+header 	ul li a:visited color: rgb(6, 86, 136)
+
+header 	ul li a:hover color: red
+
+header 	ul li a:active color: pink
+  
+main 	image hover border-color: pink
+
+Image border color: #798C8C
+
+Image hover color: pink
+
+LinkedIn Icon border color: sky-blue
+
+footer	ul li color: rgb(255, 235, 255)
+
+
+
+------------------------------------------------------------------------------------------
+
+Sitemap:       siteMap.pdf
+
+------------------------------------------------------------------------------------------
+
+
+Images -
+
+Home Page
+
+Profile Image           portfolio-image.jpg     
+
+
+Contact Page
+
+Credits :
+
+Project Page Photos: 
+         
+Courtesy :              Pexels Images
+
+
+LinkedIn Icon   : linkedin-icon-scaled.png
+
+LinkedIn Icon Courtesy: 
+LinkedIn Icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
+License: linkedin-icon-license_editorial.pdf
+
+_________________________________________________________________________________________
+
+
+
+Wireframe for HOME :(index.html)
+
+Wireframe for PROJECTS :(projects.html)
+
+Wireframe for CONTACT :(contact.html)
+
+
+_________________________________________________________________________________________
+
+Text Contents for HOME page:
+
+APALA CHANDOLA
+Business Analyst | Project/Program Manager | Agile | Creative and Strategic Problem Solver
+
+
+_______________________________
+About Me...
+
+I am a Business Analyst and techno-functional leader with a demonstrated history of working in the IT and business operations. I am curious, creative, analytical with interpersonal communication skills for influencing and collaborating with diverse technical, non-technical teams, stakeholders and customers to solve business needs. I am detail oriented and have a great understanding of cultural diversity and sensitivity. 
+
+I have successfully managed implementation of software products and upgrades, cultivating business relationships and partnering with business and technical teams. I lead with strategic thinking to identify and execute opportunities that drive innovative solutions which further add to the company’s growth.</p>
+
+I am proficient in solving problems under complex situations. My associates and ex-colleagues recognize me as a customer focused, agile team player that is adept at leveraging skills to work with both business and technical groups.
+
+I like to collaborate with Customers, Business and IT stakeholders to help drive timely and acceptable solutions. Leveraging my business knowledge and technical expertise enables me to drive effective business process improvements. I enjoy working in cross-functional and globally integrated team environments in order to produce successful outcomes and results.
+
+A listing of my core competencies include:
+
+Business Requirement Analysis & Solution design
+Project Management
+Resource and Vendor Management
+Process Optimization and Re-engineering
+Agile, Waterfall Frameworks
+SEO, Analytics and Digital Marketing
+UX research and Web design
+
+Technical Skills: 
+
+Oracle Cloud Database, Google Analytics, MS Office(Word, SQL, PL/SQL, Relational Databases, HTML/CSS, JavaScript(Front end), Python(Fundamentals), Canva, MS office tools(Word, PowerPoint, Excel), Visual Studio Code, Jupyter Notebook, Google(G-docs, G-Sheet, G-Slides, G-meet), Wordpress, Trello, JIRA, Slack, Zoom
+
+Other skills: 	
+                    
+SaaS subscription model, B2B, B2C, DTC/S2C business models, Agile Methodologies, Google Analytics.
+
+Emerging skills : 
+
+Content strategies, SEO and Digital marketing, UX research, UX design, Content design
+------------------------------
+
+Text Contents for PROJECTS page:
+
+A glimpse of my projects...
+
+I have lead and participated in enterprise end-to-end system implementations, planning including project management, issue management, resolution, communication and change management. In recent years, I have pivoted into projects that involve UX research, Analytics, Content, SEO and Digital Marketing objectives and strategies.
+
+Google Analytics
+
+As a SEO & Marketing team lead, I have implemented Google Analytics on a CMS and LMS word press websites(Pro-bono projects). This for traffic and content analysis in order to drive new users traffic to the website and increase retention rate. I have created custom dashboards, reports and insights. I have also created and incorporated strategies into contents and the site infrastructure which has improved SEO.
+
+Digital Content Management Website within Agile/Scrum Framework
+
+Collaborate with cross-functional teams to improve UX design, content design and maintain the CMS and website(Pro-bono project). Collaborate with Stakeholders to create User Stories and refine backlog items for sprint cycles. Designed and created an Infographics based LinkedIn banner and logo for the Silicon Valley Project Management. Write blogs and articles. Read my recent article on "My Journey into the Agile world..." 
+
+Oracle E-Business ERP Implementation  
+
+The project was about process improvements and global implementation of Oracle 11i E-Business ERP modules with an objective to reduce operational risk, remove redundancy and increase efficiency. It was a system migration from Oracle 10.7 to Oracle 11i with a complete transition redo as there was no upgrade path.
+
+In role of a Project Team Manager/Technologist, I managed Order Management internal and offshore sub-teams in feasibility study, business functions impact to Asia Pacific and Canada(APAC), Latin America & Europe. Facilitated and conducted business flows mappings to oracle workflows, business and technical gap analysis, QA and cross-functional UAT. 
+
+
+
+CFIT/SCM-Customer fulfillment in-transit and Supply Chain Management
+ 
+This was a process improvement initiative within the waterfall methodology framework involving demand planning, MRP, work order scheduling and Merge-in-transit logistics.
+
+As an IT Project Manager for Shipping and Fulfillment, collaborated with stakeholders and 3PL to understand scope. Partnered with the business users to help streamline business processes & assess end user needs. Designed solution ensuring that fulfillment from supplier to customer(S2C) and Merge in-transit functionality and enhancements met current and future business objectives from a global perspective. Lead and participated in regression, volume and integration testing.
+
+
+Legal & Export Compliance Project:
+
+Legal & Export Compliance functionality(including document transfers via EDI) and enhancements to comply with up-to-date US Government export regulations. Implement a DNS Screening web service against Denied & Restricted Party List issued by the US Government Customs Department. EDI was used for document transfer and picked up through web service calls to upload changes into data warehouse. Compliance checks and cross-validations were introduced against customers, resellers and vendors at every interaction level within the system as well.
+
+My role as a team lead : Defined scope of project deliverables in collaboration with stakeholders. Wrote use cases, QA tested, logged and tracked bugs, filling in as a team resource. Ensured a smooth integration with existing Oracle application modules. 
+
+This project was a significantly critical enhancement that prevented the organization’s business from getting into legal issues with customs, export compliance and security lapses.
+
+
+
+Logistics Information Management System(LIMS) :
+
+This project was about reverse engineering of a functional legacy system LODS(Logistics Decision Support) to Logistics Information Management System(LIMS) a tertiary datamart Business Intelligence System in an OLAP environment. The system supported stakeholders and 3PL in making key decisions regarding forecasting demand, supply projections, logistics, shipment planning & Revenue Recognition. 
+
+In role of a Business Intelligence Analyst, I conducted data mapping, gap analysis, schema and user interface design of the decision support system. QA tested, coordinated development and interface code testing, implementation activities in accordance with Sun’s Six Sigma(DMAIC) standards. 
+
+
+SunRamp Project : 
+
+Deployment of Oracle ERP(10.7) in Japan and enhancements in Europe, Latin America and APAC. 
+
+As a team lead, led ERP IT Order Fulfillment and Inventory planning project team of 50 members across 4 different time zones. Partnered with business on consolidation and alignment of business processes. Gathered business requirements, collaborated with 3PL, cross-functional teams to conduct impact analysis and identify gaps in Order shipping and MRP system processes. Came up with effective, low maintenance functional and technical solutions to meet user requirements. Coordinated offshore teams, conducted code reviews, regression testing, volume testing, QA testing, tracked bugs, coordinated UAT, led release activities per SDLC standards. ERP Advocate/facilitator in architecture forums. Devised a unicode multibyte solution to support local language(Kanji script) requirements for Japan.  
+
+This was the next big ERP implementation after US, Europe & APAC. 
+
+*Recognized with an award for special contributions in Sun’s cost saving initiative.
+
+
+SunPeak Project :
+ 
+Deployment of Global Shipment Planning(GSP) a custom application and Oracle Applications suite 10.7 for 100+ users across various parts in the US, Europe and APAC. 
+
+As a Business Technologist, I partnered with business, created data mapping and requirements documents & data flow diagrams. Lead a cross-functional team of developers and held code reviews to ensure performance improvements. Wrote Test plans, use cases to test SCM and OM functions and code. Designed and developed a new Decision Support(DSS) Reporting Architecture and interfaces using Oracle Reports, PL/SQL and Pro*C for the Sunpeak project to fulfill user requirements and remove redundancy. The project was one of the largest enterprise wide implementations.   
+
+
+------------------------------
+
+Text Content for CONTACT :
+
+Are you trying to search for ways to reach your potential customers?
+Do you want to increase your customer retention and drive more traffic to your site?
+Do you want to know if your KPI's are aligned to your business objectives?
+Do you need help in finding those pain points of the customers?
+Do you want to solve problems encountered by internal and/or external customers with agility?
+Are you looking for someone to bring in innovative solutions and changes to the way your organization works?
+Let's connect...
+
+
+Email    
+
+LinkedIn Icon -> <LinkedIn Profile Link>
+
+
+_________________________________________________________________________________________
+
+
+Portfolio Examples and my comments:
+
+http://www.justinaguilar.com/
+
+This is a webpage of a Web Designer. He seem to have attempted and make his projects and skills come out very loud.
+Don't like: The UI is not appealing and looks very disoriented, loud and flashy. The navigation is not very user friendly. Contents don’t speak or convey so clearly about this web product designer’s works and experience explicitly.
+
+http://kylethacker.com
+
+A simple and clean webpage portfolio of a Product Designer. Very intuitive UI and navigation. Content flows very well.
+Don’t like: An image breaking the flow of contents even though it may be intentional for providing a logical break between header and body.
+
+http://lefft.com
+
+A very illustrative and colorfully apt webpage of a freelance illustrator. User friendly UI with a flavor of vintage classic style. Catches attention of the browsing person.
+Don’t like: The bold written text at the bottom looks awkward and the footer margin is not aligned property.
