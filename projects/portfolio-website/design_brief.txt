@@ -215,17 +215,27 @@ ________________________________________________________________________________
 
 Portfolio Examples and my comments:
 
-http://www.justinaguilar.com/
-
-This is a webpage of a Web Designer. He seem to have attempted and make his projects and skills come out very loud.
-Don't like: The UI is not appealing and looks very disoriented, loud and flashy. The navigation is not very user friendly. Contents don’t speak or convey so clearly about this web product designer’s works and experience explicitly.
-
-http://kylethacker.com
-
-A simple and clean webpage portfolio of a Product Designer. Very intuitive UI and navigation. Content flows very well.
-Don’t like: An image breaking the flow of contents even though it may be intentional for providing a logical break between header and body.
 
 http://lefft.com
 
-A very illustrative and colorfully apt webpage of a freelance illustrator. User friendly UI with a flavor of vintage classic style. Catches attention of the browsing person.
-Don’t like: The bold written text at the bottom looks awkward and the footer margin is not aligned property.
+A very illustrative and colorfully apt webpage of a freelance illustrator. 
+
+Like : User friendly UI with a flavor of vintage classic style. Catches attention of the viewer.
+
+Dislike: The bold written text at the bottom looks awkward and the footer margin is not aligned property.
+
+http://www.justinaguilar.com/
+
+This is a webpage of a Web Designer. 
+
+Like : He seem to have attempted to pronounce his projects and skills to come out very loud.
+
+Dislike: The UI is not appealing and looks very disoriented, loud and flashy. The navigation is not very user friendly. Contents don’t speak or convey so clearly about this web product designer’s projects and experience explicitly.
+
+http://kylethacker.com
+
+A simple and clean webpage portfolio of a Product Designer. 
+
+Like : Very intuitive UI and navigation. Content flows very well.
+
+Dislike: An image breaking the flow of contents even though it may be intentional for providing a logical break between header and body.
